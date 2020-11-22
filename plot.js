@@ -167,7 +167,7 @@ function umpires_by_origin(){
 }
 
 function matches_played_by_team_by_season(){
-    fetch('http://0.0.0.0:8000/json_creater/matches_played_by_team_by_season.json')
+    fetch('json_files/matches_played_by_team_by_season.json')
         .then(response => response.json())
         .then(data => {
             let teams = data.teams
